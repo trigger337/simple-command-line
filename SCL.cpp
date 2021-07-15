@@ -34,7 +34,12 @@ int main()
 		if(inp == cmds[2])
 			help();
 		if(inp == cmds[3])
-			exit(0);
+		{
+			cout << "are you sure(y/n): ";
+			cin >> inp;
+			if(inp == cmds[0])
+				exit(0);
+		}
 		if(inp == cmds[4])
 			system("cls");
 		
